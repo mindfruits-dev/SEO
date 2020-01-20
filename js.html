@@ -1,0 +1,23 @@
+<script>
+  function launchsomething(){
+    google.script.run.withSuccessHandler((x)=>alert(x).getLaunched("something")).getLaunched('ouioui')
+  }
+
+  /****************************************************************************************************************************/
+
+  myObject = new Vue({
+    el: '#vue',
+    data: {
+      message: 'Hello Vue.js!',
+      todos: [
+        { text: 'Learn JavaScript' },
+        { text: 'Learn Vue.js' },
+        { text: 'Build Something Awesome' }
+      ]
+    }
+  })
+
+  function johndoe() {
+    myObject.message = "John Doe";
+  }
+</script>
